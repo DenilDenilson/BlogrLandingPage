@@ -37,7 +37,7 @@ module.exports = {
         'icon-arrow-dark': "url('../images/icon-arrow-dark.svg')", //Flecha naranja hacia abajo
         'icon-arrow-light': "url('../images/icon-arrow-light.svg')", //Flecha blanca hacia abajo
         'icon-close': "url('../images/icon-close.svg')", //Y bueno, ícono de cerrar
-        'icon.hamburger': "url('../images/icon-hamburger.svg')", //Hamburguesita
+        'icon-hamburger': "url('../images/icon-hamburger.svg')", //Hamburguesita
         'illustration-editor-desktop': "url('../images/illustration-editor-desktop.svg')", // La tipo radio para desktop
         'illustration-editor-mobile': "url('../images/illustration-editor-mobile.svg')", // " " " " mobile
         'illustration-laptop-desktop': "url('../images/illustration-laptop-desktop.svg')", // Laptop to desktop

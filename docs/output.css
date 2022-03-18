@@ -467,3 +467,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.h-20 {
+  height: 5rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.bg-\[\#753\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(119 85 51 / var(--tw-bg-opacity));
+}
+
+.bg-logo {
+  background-image: url('../images/logo.svg');
+}
+
+.bg-icon-hamburger {
+  background-image: url('../images/icon-hamburger.svg');
+}
+
+.bg-illustration-editor-mobile {
+  background-image: url('../images/illustration-editor-mobile.svg');
+}
+
+.bg-illustration-phones {
+  background-image: url('../images/illustration-phones.svg');
+}
+
+.bg-illustration-laptop-mobile {
+  background-image: url('../images/illustration-laptop-mobile.svg');
+}
