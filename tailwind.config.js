@@ -31,9 +31,9 @@ module.exports = {
       },
 
       backgroundImage: {
-        'bg-pattern-circles': "url('../images/bg-pattern-circles.svg')", //Circulo azul con circulo exterior cocentrico
-        'bg-pattern-intro-desktop': "url('../images/bg-pattern-intro-desktop.svg')", //Circulos naranja a la izquierda de la pantalla
-        'bg-pattern-intro-mobile': "url('../images/bg-pattern-intro-mobile.svg')", //Circulo y dos cuadrados a la izquierda " " " "
+        'pattern-circles': "url('../images/bg-pattern-circles.svg')", //Circulo azul con circulo exterior cocentrico
+        'pattern-intro-desktop': "url('../images/bg-pattern-intro-desktop.svg')", //Circulos naranja a la izquierda de la pantalla
+        'pattern-intro-mobile': "url('../images/bg-pattern-intro-mobile.svg')", //Circulo y dos cuadrados a la izquierda " " " "
         'icon-arrow-dark': "url('../images/icon-arrow-dark.svg')", //Flecha naranja hacia abajo
         'icon-arrow-light': "url('../images/icon-arrow-light.svg')", //Flecha blanca hacia abajo
         'icon-close': "url('../images/icon-close.svg')", //Y bueno, ícono de cerrar

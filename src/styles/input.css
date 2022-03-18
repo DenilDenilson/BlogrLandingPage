@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* header {
+    background-position-x: -340px;
+    background-position-y: -290px;
+} */
