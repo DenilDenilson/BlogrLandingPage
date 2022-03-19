@@ -19,14 +19,14 @@
         xl:justify-start xl:items-end xl:px-16">
             <div class="scale-75 w-[7rem] h-20 bg-logo bg-center bg-no-repeat
             xl:h-[2.5rem]"></div>
-            <div class="absolute bg-White w-[360px] h-0 overflow-hidden left-0 right-0 mx-auto top-[52px] text-center px-8 rounded-lg shadow-2xl transform-{height} duration-500 ease-in-out" id="menu_desplegable">
+            <div class="absolute bg-White w-[360px] h-0 overflow-hidden left-0 right-0 mx-auto top-[52px] text-center px-8 rounded-lg shadow-2xl transform-{height} duration-500 ease-in-out  xl:invisible" id="menu_desplegable">
                 <ul class="text-Very-dark-blue font-Overpass font-semibold my-6">
                     <li>
-                        <div class="flex items-center justify-center text-xl mb-2">
+                        <div class="flex items-center justify-center text-xl mb-2 relative">
                             Product
                             <div class="w-[10px] h-[10px] bg-icon-arrow-dark bg-center bg-no-repeat bg-auto ml-2 transition-transform duration-300 ease-in"></div>
                         </div>
-                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] mb-2 rounded-lg h-0 overflow-hidden transform-{height} duration-300 list_desplegable">
+                        <ul class="font-Overpass absolute text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] mb-2 rounded-lg  transform-{height} duration-300 list_desplegable">
                             <li>Overview</li>
                             <li>Pricing</li>
                             <li>Marketplace</li>
@@ -39,7 +39,7 @@
                             Company
                             <div class="w-[10px] h-[10px] bg-icon-arrow-dark bg-center bg-no-repeat bg-auto ml-2 transition-transform duration-300 ease-in"></div>
                         </div>
-                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] mb-2 rounded-lg h-0 overflow-hidden transform-{height} duration-300 list_desplegable">
+                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] mb-2 rounded-lg h-0  transform-{height} duration-300 list_desplegable">
                             <li>About</li>
                             <li>Team</li>
                             <li>Blog</li>
@@ -51,7 +51,7 @@
                             Connect
                             <div class="w-[10px] h-[10px] bg-icon-arrow-dark bg-center bg-no-repeat bg-auto ml-2 transition-transform duration-300 ease-in"></div>
                         </div>
-                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] mb-2 rounded-lg h-0 overflow-hidden transform-{height} duration-300 list_desplegable">
+                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] mb-2 rounded-lg h-0  transform-{height} duration-300 list_desplegable">
                             <li>Contact</li>
                             <li>Newsletter</li>
                             <li>LinkedIn</li>
@@ -64,9 +64,10 @@
                 </div>
             </div>
 
-            <ul class="text-Very-dark-blue font-Overpass font-semibold items-center flex ml-6 invisible  xl:visible">
+            <div class="hidden xl:block">
+                <ul class="text-Very-dark-blue font-Overpass font-semibold items-center flex ml-6 invisible  xl:visible">
                 <li>
-                    <div class="flex items-center justify-center text-White text-sm font-light mr-6">
+                    <div class="flex items-center justify-center text-White text-sm font-light mr-6 cursor-pointer hover:underline">
                         Product
                         <div class="w-[10px] h-[10px] bg-icon-arrow-light bg-center bg-no-repeat bg-auto ml-2 transition-transform duration-300 ease-in"></div>
                     </div>
@@ -79,7 +80,7 @@
                     </ul>
                 </li>
                 <li>
-                    <div class="flex items-center justify-center text-White text-sm font-light mr-6">
+                    <div class="flex items-center justify-center text-White text-sm font-light mr-6 cursor-pointer hover:underline">
                         Company
                         <div class="w-[10px] h-[10px] bg-icon-arrow-light bg-center bg-no-repeat bg-auto ml-2 transition-transform duration-300 ease-in"></div>
                     </div>
@@ -91,7 +92,7 @@
                     </ul>
                 </li>
                 <li>
-                    <div class="flex items-center justify-center text-White text-sm font-light mr-6">
+                    <div class="flex items-center justify-center text-White text-sm font-light mr-6 cursor-pointer hover:underline">
                         Connect
                         <div class="w-[10px] h-[10px] bg-icon-arrow-light bg-center bg-no-repeat bg-auto ml-2 transition-transform duration-300 ease-in"></div>
                     </div>
@@ -102,10 +103,14 @@
                     </ul>
                 </li>
             </ul>
+            </div>
 
-            <div class="flex items-center ml-auto invisible  xl:visible">
-                <button class="font-Overpass font-semibold w-36 h-10 rounded-3xl text-White mt-2">Login</button>
-                <button class="font-Overpass font-semibold bg-White w-36 h-10 rounded-3xl text-Light-red">Sign Up</button>
+            <div class="hidden xl:block ml-auto">
+                <div class="flex items-center ml-auto invisible  xl:visible">
+                    <button class="font-Overpass font-semibold w-36 h-10 rounded-3xl text-White mt-2">Login</button>
+                    <button class="font-Overpass font-semibold bg-White w-36 h-10 rounded-3xl text-Light-red
+                    hover:bg-[#ff7a87] hover:text-White">Sign Up</button>
+                </div>
             </div>
             <div class="w-20 h-20 bg-icon-hamburger bg-center bg-no-repeat block xl:hidden" id="icon_hamburger"></div>
             <div class="w-20 h-20 bg-icon-close bg-center bg-no-repeat hidden" id="icon_close"></div>
@@ -114,8 +119,10 @@
         xl:text-6xl">A modern publishing platform</h1>
         <p class="mb-12 text-center text-base font-light font-Overpass text-White mx-6">Grow your audience and build your online branch</p>
         <div class="flex items-center justify-center">
-            <button class="font-Ubuntu font-bold text-sm text-Light-red w-32 h-12 rounded-3xl bg-White mr-8">Start For Free</button>
-            <button class="font-Ubuntu font-bold text-sm text-White w-32 h-12 rounded-3xl border-2 border-White">Learn More</button>
+            <button class="font-Ubuntu font-bold text-sm text-Light-red w-32 h-12 rounded-3xl bg-White mr-8
+            hover:bg-[#ff7a87] hover:text-White">Start For Free</button>
+            <button class="font-Ubuntu font-bold text-sm text-White w-32 h-12 rounded-3xl border-2 border-White
+            hover:bg-White hover:text-Light-red">Learn More</button>
         </div>
     </header>
     
@@ -187,34 +194,41 @@
         </section>
     </section>
 
-    <footer class=" bg-Very-dark-black-blue rounded-tr-[6rem] pt-4">
-        <div  class="scale-75 w-[7rem] h-20 bg-logo bg-center bg-no-repeat mx-auto mb-12"></div>
-        <ul class="flex flex-col items-center text-center text-sm pb-12">
-            <li class="text-White font-Ubuntu font-medium">
+    <footer class=" bg-Very-dark-black-blue rounded-tr-[6rem] pt-4
+    xl:flex xl:items-start xl:justify-center xl:h-[320px] xl:pt-14">
+        <div  class="scale-75 w-[7rem] h-20 bg-logo bg-center bg-no-repeat mx-auto mb-12
+        xl:mx-0 xl:mr-11">
+        </div>
+        <ul class="flex flex-col items-center text-center text-sm pb-12
+        xl:flex-row">
+            <li class="text-White font-Ubuntu font-medium
+            xl:h-[140px] px-11">
                 Product
                 <ul class="text-Grayish-blue font-normal text-sm mt-4">
-                    <li>Overview</li>
-                    <li>Pricing</li>
-                    <li>Marketplace</li>
-                    <li>Features</li>
-                    <li>Integrations</li>
+                    <li class="py-3  hover:underline cursor-pointer">Overview</li>
+                    <li class="py-3  hover:underline cursor-pointer">Pricing</li>
+                    <li class="py-3  hover:underline cursor-pointer">Marketplace</li>
+                    <li class="py-3  hover:underline cursor-pointer">Features</li>
+                    <li class="py-3  hover:underline cursor-pointer">Integrations</li>
                 </ul>
             </li>
-            <li class="text-White font-Ubuntu font-medium mt-4">
+            <li class="text-White font-Ubuntu font-medium mt-4
+            xl:mt-0 xl:h-[140px] px-11">
                 Company
                 <ul class="text-Grayish-blue font-normal text-sm mt-4">
-                    <li>About</li>
-                    <li>Team</li>
-                    <li>Blog</li>
-                    <li>Carrers</li>
+                    <li class="py-3  hover:underline cursor-pointer">About</li>
+                    <li class="py-3  hover:underline cursor-pointer">Team</li>
+                    <li class="py-3  hover:underline cursor-pointer">Blog</li>
+                    <li class="py-3  hover:underline cursor-pointer">Carrers</li>
                 </ul>
             </li>
-            <li class="text-White font-Ubuntu font-medium mt-4">
+            <li class="text-White font-Ubuntu font-medium mt-4
+            xl:mt-0 xl:h-[140px] px-11">
                 Connect
                 <ul class="text-Grayish-blue font-normal text-sm mt-4">
-                    <li>Contact</li>
-                    <li>Newsletter</li>
-                    <li>LinkedIn</li>
+                    <li class="py-3  hover:underline cursor-pointer">Contact</li>
+                    <li class="py-3  hover:underline cursor-pointer">Newsletter</li>
+                    <li class="py-3  hover:underline cursor-pointer">LinkedIn</li>
                 </ul>
             </li>
         </ul>
