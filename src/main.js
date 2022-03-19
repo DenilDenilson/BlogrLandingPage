@@ -21,16 +21,24 @@ iconClose.addEventListener('click', () => {
     iconHamburger.classList.remove('hidden');
     iconHamburger.classList.add('block');
 
-    let height = 0;
-    menuDesplegable.style.height=`${height}px`;
+    let height;
+    height = menuDesplegable.clientHeight;
+    menuDesplegable.style.height = `${height}px`;
+    console.log(height);
+    if (!(height == "0")) {
+        height = 0;
+        menuDesplegable.style.height=`${height}px`;
+    }
 });
 
 listsDesplegable.forEach(listDesplegable => {
     let title = listDesplegable.previousElementSibling;
     let arrowDown = title.lastElementChild;
+    let heighMenu = menuDesplegable.clientHeight;
+    
 
     title.addEventListener('click', () => {
-        menuDesplegable.style.height=`auto`;
+        menuDesplegable.style.height = `auto`;
 
         arrowDown.classList.toggle('rotate-180');
         
@@ -38,7 +46,7 @@ listsDesplegable.forEach(listDesplegable => {
         if (listDesplegable.clientHeight == "0") {
             heightList = listDesplegable.scrollHeight;
         }
-        listDesplegable.style.height = `${heightList}px`;        
+        listDesplegable.style.height = `${heightList}px`;
+        
     });
-    
 });
