@@ -12,3 +12,10 @@ header {
     background-position-x: -40px;
     background-position-y: -180px;
 }
+
+@media only screen and (min-width: 1440px) {
+    header {
+        background-position-x: -600px;
+        background-position-y: -1200px;
+    }
+}

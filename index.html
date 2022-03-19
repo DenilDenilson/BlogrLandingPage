@@ -13,10 +13,13 @@
 <body class="">
     
     <header class="h-[560px] bg-pattern-intro-mobile bg-no-repeat bg-auto rounded-bl-[6rem]
-    before:content-center before:w-full before:h-[560px] before:rounded-bl-[6rem] before:absolute before:top-0 before:left-0 before:bg-gradient-to-t from-Light-red to-Very-light-red before:opacity-95 before:-z-10">
-        <nav class="h-[48px] flex items-center justify-between mb-32 relative">
-            <div class="scale-75 w-[7rem] h-20 bg-logo bg-center bg-no-repeat"></div>
-            <div class="w-20 h-20 bg-icon-hamburger bg-center bg-no-repeat block" id="icon_hamburger"></div>
+    before:content-center before:w-full before:h-[560px] before:rounded-bl-[6rem] before:absolute before:top-0 before:left-0 before:bg-gradient-to-t from-Light-red to-Very-light-red before:opacity-95 before:-z-10
+    xl:bg-pattern-intro-desktop xl:h-[588px] xl:before:h-[588px]">
+        <nav class="h-[64px] flex items-center justify-between mb-32 relative
+        xl:justify-start xl:items-end xl:px-16">
+            <div class="scale-75 w-[7rem] h-20 bg-logo bg-center bg-no-repeat
+            xl:h-[2.5rem]"></div>
+            <div class="w-20 h-20 bg-icon-hamburger bg-center bg-no-repeat block xl:hidden" id="icon_hamburger"></div>
             <div class="w-20 h-20 bg-icon-close bg-center bg-no-repeat hidden" id="icon_close"></div>
             <div class="absolute bg-White w-[360px] h-0 overflow-hidden left-0 right-0 mx-auto top-[52px] text-center px-8 rounded-lg shadow-2xl transform-{height} duration-500 ease-in-out" id="menu_desplegable">
                 <ul class="text-Very-dark-blue font-Overpass font-semibold my-6">
@@ -62,8 +65,54 @@
                     <button class="font-Overpass font-semibold bg-gradient-to-l from-Light-red to-Very-light-red w-36 h-10 rounded-3xl text-White">Sign Up</button>
                 </div>
             </div>
+
+            <ul class="text-Very-dark-blue font-Overpass font-semibold flex items-center ml-6">
+                <li>
+                    <div class="flex items-center justify-center text-White text-sm font-light mr-6">
+                        Product
+                        <div class="w-[10px] h-[10px] bg-icon-arrow-light bg-center bg-no-repeat bg-auto ml-2 transition-transform duration-300 ease-in"></div>
+                    </div>
+                    <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] mb-2 rounded-lg h-0 overflow-hidden transform-{height} duration-300 list_desplegable">
+                        <li>Overview</li>
+                        <li>Pricing</li>
+                        <li>Marketplace</li>
+                        <li>Features</li>
+                        <li>Integrations</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="flex items-center justify-center text-White text-sm font-light mr-6">
+                        Company
+                        <div class="w-[10px] h-[10px] bg-icon-arrow-light bg-center bg-no-repeat bg-auto ml-2 transition-transform duration-300 ease-in"></div>
+                    </div>
+                    <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] mb-2 rounded-lg h-0 overflow-hidden transform-{height} duration-300 list_desplegable">
+                        <li>About</li>
+                        <li>Team</li>
+                        <li>Blog</li>
+                        <li>Carrers</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="flex items-center justify-center text-White text-sm font-light mr-6">
+                        Connect
+                        <div class="w-[10px] h-[10px] bg-icon-arrow-light bg-center bg-no-repeat bg-auto ml-2 transition-transform duration-300 ease-in"></div>
+                    </div>
+                    <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] mb-2 rounded-lg h-0 overflow-hidden transform-{height} duration-300 list_desplegable">
+                        <li>Contact</li>
+                        <li>Newsletter</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="flex items-center ml-auto">
+                <button class="font-Overpass font-semibold w-36 h-10 rounded-3xl text-White mt-2">Login</button>
+                <button class="font-Overpass font-semibold bg-White w-36 h-10 rounded-3xl text-Light-red">Sign Up</button>
+            </div>
+
         </nav>
-        <h1 class="font-Overpass font-light text-center tracking-tighter text-White text-4xl mb-2 mx-6">A modern publishing platform</h1>
+        <h1 class="font-Overpass font-light text-center tracking-tighter text-White text-4xl mb-2 mx-6
+        xl:text-6xl">A modern publishing platform</h1>
         <p class="mb-12 text-center text-base font-light font-Overpass text-White mx-6">Grow your audience and build your online branch</p>
         <div class="flex items-center justify-center">
             <button class="font-Ubuntu font-bold text-sm text-Light-red w-32 h-12 rounded-3xl bg-White mr-8">Start For Free</button>
