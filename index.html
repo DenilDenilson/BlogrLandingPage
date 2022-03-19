@@ -16,16 +16,16 @@
     before:content-center before:w-full before:h-[560px] before:rounded-bl-[6rem] before:absolute before:top-0 before:left-0 before:bg-gradient-to-t from-Light-red to-Very-light-red before:opacity-95 before:-z-10">
         <nav class="h-[48px] flex items-center justify-between mb-32 relative">
             <div class="scale-75 w-[7rem] h-20 bg-logo bg-center bg-no-repeat"></div>
-            <div class="w-20 h-20 bg-icon-hamburger bg-center bg-no-repeat"></div>
-            <div class="w-20 h-20 bg-icon-close bg-center bg-no-repeat"></div>
-            <div class="absolute bg-White w-[360px] h-auto left-0 right-0 mx-auto top-[52px] text-center px-8 rounded-lg shadow-2xl">
+            <div class="w-20 h-20 bg-icon-hamburger bg-center bg-no-repeat block" id="icon_hamburger"></div>
+            <div class="w-20 h-20 bg-icon-close bg-center bg-no-repeat hidden" id="icon_close"></div>
+            <div class="absolute bg-White w-[360px] h-0 overflow-hidden left-0 right-0 mx-auto top-[52px] text-center px-8 rounded-lg shadow-2xl transform-{height} duration-500 ease-in-out" id="menu_desplegable">
                 <ul class="text-Very-dark-blue font-Overpass font-semibold my-6">
                     <li>
                         <div class="flex items-center justify-center text-xl mb-2">
                             Product
-                            <div class="w-[10px] h-[10px] bg-icon-arrow-dark bg-center bg-no-repeat bg-auto ml-2"></div>
+                            <div class="w-[10px] h-[10px] bg-icon-arrow-dark bg-center bg-no-repeat bg-auto ml-2 transition-transform duration-300 ease-in"></div>
                         </div>
-                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] py-4 mb-2 rounded-lg">
+                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] mb-2 rounded-lg h-0 overflow-hidden transform-{height} duration-300 list_desplegable">
                             <li>Overview</li>
                             <li>Pricing</li>
                             <li>Marketplace</li>
@@ -36,9 +36,9 @@
                     <li>
                         <div class="flex items-center justify-center text-xl mb-2">
                             Company
-                            <div class="w-[10px] h-[10px] bg-icon-arrow-dark bg-center bg-no-repeat bg-auto ml-2"></div>
+                            <div class="w-[10px] h-[10px] bg-icon-arrow-dark bg-center bg-no-repeat bg-auto ml-2 transition-transform duration-500 ease-in"></div>
                         </div>
-                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] py-4 mb-2 rounded-lg">
+                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] mb-2 rounded-lg h-0 overflow-hidden transform-{height} duration-300 list_desplegable">
                             <li>About</li>
                             <li>Team</li>
                             <li>Blog</li>
@@ -48,9 +48,9 @@
                     <li>
                         <div class="flex items-center justify-center text-xl mb-2">
                             Connect
-                            <div class="w-[10px] h-[10px] bg-icon-arrow-dark bg-center bg-no-repeat bg-auto ml-2"></div>
+                            <div class="w-[10px] h-[10px] bg-icon-arrow-dark bg-center bg-no-repeat bg-auto ml-2 transition-transform duration-300 ease-in"></div>
                         </div>
-                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] py-4 mb-2 rounded-lg">
+                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] mb-2 rounded-lg h-0 overflow-hidden transform-{height} duration-300 list_desplegable">
                             <li>Contact</li>
                             <li>Newsletter</li>
                             <li>LinkedIn</li>
@@ -148,5 +148,7 @@
             </li>
         </ul>
     </footer>
+
+    <script src="./src/main.js"></script>
 </body>
 </html>
