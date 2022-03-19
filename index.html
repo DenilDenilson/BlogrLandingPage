@@ -14,14 +14,59 @@
     
     <header class="h-[560px] bg-pattern-intro-mobile bg-no-repeat bg-auto rounded-bl-[6rem]
     before:content-center before:w-full before:h-[560px] before:rounded-bl-[6rem] before:absolute before:top-0 before:left-0 before:bg-gradient-to-t from-Light-red to-Very-light-red before:opacity-95 before:-z-10">
-        <nav class="h-[48px] flex items-center justify-between mb-32">
+        <nav class="h-[48px] flex items-center justify-between mb-32 relative">
             <div class="scale-75 w-[7rem] h-20 bg-logo bg-center bg-no-repeat"></div>
             <div class="w-20 h-20 bg-icon-hamburger bg-center bg-no-repeat"></div>
+            <div class="w-20 h-20 bg-icon-close bg-center bg-no-repeat"></div>
+            <div class="absolute bg-White w-[360px] h-auto left-0 right-0 mx-auto top-[52px] text-center px-8 rounded-lg shadow-2xl">
+                <ul class="text-Very-dark-blue font-Overpass font-semibold my-6">
+                    <li>
+                        <div class="flex items-center justify-center text-xl mb-2">
+                            Product
+                            <div class="w-[10px] h-[10px] bg-icon-arrow-dark bg-center bg-no-repeat bg-auto ml-2"></div>
+                        </div>
+                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] py-4 mb-2 rounded-lg">
+                            <li>Overview</li>
+                            <li>Pricing</li>
+                            <li>Marketplace</li>
+                            <li>Features</li>
+                            <li>Integrations</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="flex items-center justify-center text-xl mb-2">
+                            Company
+                            <div class="w-[10px] h-[10px] bg-icon-arrow-dark bg-center bg-no-repeat bg-auto ml-2"></div>
+                        </div>
+                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] py-4 mb-2 rounded-lg">
+                            <li>About</li>
+                            <li>Team</li>
+                            <li>Blog</li>
+                            <li>Carrers</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="flex items-center justify-center text-xl mb-2">
+                            Connect
+                            <div class="w-[10px] h-[10px] bg-icon-arrow-dark bg-center bg-no-repeat bg-auto ml-2"></div>
+                        </div>
+                        <ul class="font-Overpass text-Very-dark-grayish-blue font-semibold text-base bg-[#EEEFF0] py-4 mb-2 rounded-lg">
+                            <li>Contact</li>
+                            <li>Newsletter</li>
+                            <li>LinkedIn</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="flex flex-col items-center mb-4 border-t-2">
+                    <button class="font-Overpass font-semibold bg-White w-36 h-10 rounded-3xl mb-2 mt-2">Login</button>
+                    <button class="font-Overpass font-semibold bg-gradient-to-l from-Light-red to-Very-light-red w-36 h-10 rounded-3xl text-White">Sign Up</button>
+                </div>
+            </div>
         </nav>
         <h1 class="font-Overpass font-light text-center tracking-tighter text-White text-4xl mb-2 mx-6">A modern publishing platform</h1>
         <p class="mb-12 text-center text-base font-light font-Overpass text-White mx-6">Grow your audience and build your online branch</p>
         <div class="flex items-center justify-center">
-            <button class="font-Ubuntu font-bold text-sm text-Light-red w-32 h-12 rounded-3xl bg-White mr-10">Start For Free</button>
+            <button class="font-Ubuntu font-bold text-sm text-Light-red w-32 h-12 rounded-3xl bg-White mr-8">Start For Free</button>
             <button class="font-Ubuntu font-bold text-sm text-White w-32 h-12 rounded-3xl border-2 border-White">Learn More</button>
         </div>
     </header>
@@ -98,7 +143,7 @@
                 <ul class="text-Grayish-blue font-normal text-sm mt-4">
                     <li>Contact</li>
                     <li>Newsletter</li>
-                    <li>Linkedin</li>
+                    <li>LinkedIn</li>
                 </ul>
             </li>
         </ul>
