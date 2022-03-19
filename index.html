@@ -19,8 +19,6 @@
         xl:justify-start xl:items-end xl:px-16">
             <div class="scale-75 w-[7rem] h-20 bg-logo bg-center bg-no-repeat
             xl:h-[2.5rem]"></div>
-            <div class="w-20 h-20 bg-icon-hamburger bg-center bg-no-repeat block xl:hidden" id="icon_hamburger"></div>
-            <div class="w-20 h-20 bg-icon-close bg-center bg-no-repeat hidden" id="icon_close"></div>
             <div class="absolute bg-White w-[360px] h-0 overflow-hidden left-0 right-0 mx-auto top-[52px] text-center px-8 rounded-lg shadow-2xl transform-{height} duration-500 ease-in-out" id="menu_desplegable">
                 <ul class="text-Very-dark-blue font-Overpass font-semibold my-6">
                     <li>
@@ -66,7 +64,7 @@
                 </div>
             </div>
 
-            <ul class="text-Very-dark-blue font-Overpass font-semibold flex items-center ml-6">
+            <ul class="text-Very-dark-blue font-Overpass font-semibold items-center flex ml-6 invisible  xl:visible">
                 <li>
                     <div class="flex items-center justify-center text-White text-sm font-light mr-6">
                         Product
@@ -105,11 +103,12 @@
                 </li>
             </ul>
 
-            <div class="flex items-center ml-auto">
+            <div class="flex items-center ml-auto invisible  xl:visible">
                 <button class="font-Overpass font-semibold w-36 h-10 rounded-3xl text-White mt-2">Login</button>
                 <button class="font-Overpass font-semibold bg-White w-36 h-10 rounded-3xl text-Light-red">Sign Up</button>
             </div>
-
+            <div class="w-20 h-20 bg-icon-hamburger bg-center bg-no-repeat block xl:hidden" id="icon_hamburger"></div>
+            <div class="w-20 h-20 bg-icon-close bg-center bg-no-repeat hidden" id="icon_close"></div>
         </nav>
         <h1 class="font-Overpass font-light text-center tracking-tighter text-White text-4xl mb-2 mx-6
         xl:text-6xl">A modern publishing platform</h1>
@@ -120,46 +119,69 @@
         </div>
     </header>
     
-    <section class="mt-16">
-        <h2 class="text-center font-Overpass text-Very-dark-blue font-semibold text-2xl">Designed for the future</h2>
-        <div class="w-[360px] h-[360px] bg-illustration-editor-mobile bg-center bg-no-repeat bg-auto my-4 mx-auto"></div>
-        
-        <section class="mb-[14rem]">
-            <h3 class="text-center font-Overpass text-Very-dark-blue font-semibold text-xl px-10 mb-4">Introducing an extensible editor</h3>
-            <p class="text-center font-Overpass text-Very-dark-grayish-blue px-10 mb-8">
-                Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-                The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-                videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-                change the looks of a blog.
-            </p>
-            <h3 class="text-center font-Overpass text-Very-dark-blue font-semibold text-xl px-10 mb-4">Robust content management</h3>
-            <p class="text-center font-Overpass text-Very-dark-grayish-blue px-10 mb-8">
-                Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-                by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-            </p>
-        </section>
+    <section class="mt-16 ">
+        <h2 class="text-center font-Overpass text-Very-dark-blue font-semibold text-2xl
+        xl:text-4xl">Designed for the future</h2>
+        <div class="w-[360px] h-[360px] bg-illustration-editor-mobile bg-center bg-no-repeat bg-auto my-4 mx-auto
+        xl:hidden"></div>
+        <div class="xl:flex">
+            <section class="mb-[14rem]
+             xl:p-[100px] xl:mb-[2rem]">
+                <h3 class="text-center font-Overpass text-Very-dark-blue font-semibold text-xl px-10 mb-4
+                xl:text-left text-2xl">Introducing an extensible editor</h3>
+                <p class="text-center font-Overpass text-Very-dark-grayish-blue px-10 mb-8
+                xl:text-left">
+                    Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                    The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                    videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                    change the looks of a blog.
+                </p>
+                <h3 class="text-center font-Overpass text-Very-dark-blue font-semibold text-xl px-10 mb-4
+                xl:text-left xl:text-2xl">Robust content management</h3>
+                <p class="text-center font-Overpass text-Very-dark-grayish-blue px-10 mb-8
+                xl:text-left">
+                    Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                    by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                </p>
+            </section>
+
+            <div class=" w-[1500px] h-[500px] bg-illustration-editor-desktop bg-center bg-no-repeat bg-cover my-4 mx-auto hidden xl:block"></div>
+        </div>
     </section>
 
     <section class="relative h-[560px] rounded-bl-[6rem] rounded-tr-[6rem] bg-pattern-circles bg-no-repeat bg-cover section_telefono
-    before:content-center before:w-full before:h-[560px] before:rounded-bl-[6rem] before:rounded-tr-[6rem] before:absolute before:top-0 before:left-0 before:bg-gradient-to-t from-Very-dark-desaturated-blue to-Very-dark-gray-blue before:opacity-95 before:-z-10">
-        <div class="w-[360px] h-[360px] bg-illustration-phones bg-center bg-no-repeat bg-cover absolute top-[-180px] left-0 right-0 mx-auto"></div>
-        <section class="pt-[200px]">
-            <h3 class="text-center text-White font-Overpass text-4xl font-light mb-6">State of the Art Infrastructure</h3>
-            <p class="text-White font-Overpass text-center font-light px-10 text-base">
+    before:content-center before:w-full before:h-[560px] before:rounded-bl-[6rem] before:rounded-tr-[6rem] before:absolute before:top-0 before:left-0 before:bg-gradient-to-t from-Very-dark-desaturated-blue to-Very-dark-gray-blue before:opacity-95 before:-z-10
+    xl:flex">
+        <div class="w-[360px] h-[360px] bg-illustration-phones bg-center bg-no-repeat bg-cover absolute top-[-180px] left-0 right-0 mx-auto
+        xl:relative xl:w-[1240px] xl:h-[600px] xl:top-0"></div>
+        <section class="pt-[200px] 
+        xl:pl-[200px]">
+            <h3 class="text-center text-White font-Overpass text-4xl font-light mb-6
+            xl:text-left xl:text-5xl">State of the Art Infrastructure</h3>
+            <p class="text-White font-Overpass text-center font-light px-10 text-base
+            xl:text-left xl:px-0">
                 With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
             </p>
         </section>
     </section>
 
-    <section>
-        <div class="w-[360px] h-[360px] bg-auto my-4 bg-illustration-laptop-mobile bg-center bg-no-repeat mx-auto"></div>
-        <section>
-            <h3 class="text-center font-Overpass text-Very-dark-blue font-semibold text-xl px-10 mb-4">Free, open, simple</h3>
-            <p class="text-center font-Overpass text-Very-dark-grayish-blue px-10 mb-8">
+    <section class="xl:flex xl:items-center">
+        <div class="w-[360px] h-[360px] bg-auto my-4 bg-illustration-laptop-mobile bg-center bg-no-repeat mx-auto
+        xl:hidden"></div>
+
+        <div class="w-[1500px] h-[500px] bg-cover my-4 bg-illustration-laptop-desktop bg-center bg-no-repeat mx-auto hidden xl:block"></div>
+
+        <section class="xl:px-[50px]">
+            <h3 class="text-center font-Overpass text-Very-dark-blue font-semibold text-xl px-10 mb-4
+            xl:text-left xl:text-3xl">Free, open, simple</h3>
+            <p class="text-center font-Overpass text-Very-dark-grayish-blue px-10 mb-8
+            xl:text-left xl:text-lg">
                 Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
             </p>
-            <h3 class="text-center font-Overpass text-Very-dark-blue font-semibold text-xl px-10 mb-4">Powerful tooling</h3>
-            <p class="text-center font-Overpass text-Very-dark-grayish-blue px-10 mb-[6rem]">
+            <h3 class="text-center font-Overpass text-Very-dark-blue font-semibold text-xl px-10 mb-4
+            xl:text-left xl:text-3xl">Powerful tooling</h3>
+            <p class="text-center font-Overpass text-Very-dark-grayish-blue px-10 mb-[6rem]
+            xl:text-left xl:text-lg">
                 Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
             </p>
         </section>

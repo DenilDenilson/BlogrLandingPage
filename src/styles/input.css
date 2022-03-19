@@ -7,8 +7,7 @@ header {
     background-position-y: -290px;
 }
 
-.section_telefono
-{
+.section_telefono {
     background-position-x: -40px;
     background-position-y: -180px;
 }
@@ -17,5 +16,9 @@ header {
     header {
         background-position-x: -600px;
         background-position-y: -1200px;
+    }
+    .section_telefono {
+    background-position-x: -400px;
+    background-position-y: -600px;
     }
 }
