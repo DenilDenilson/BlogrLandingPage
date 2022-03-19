@@ -24,7 +24,7 @@ iconClose.addEventListener('click', () => {
     let height;
     height = menuDesplegable.clientHeight;
     menuDesplegable.style.height = `${height}px`;
-    console.log(height);
+    //console.log(height);
     if (!(height == "0")) {
         height = 0;
         menuDesplegable.style.height=`${height}px`;
