@@ -13,7 +13,7 @@
 <body class="">
     
     <header class="h-[560px] bg-pattern-intro-mobile bg-no-repeat bg-auto rounded-bl-[6rem]
-    before:content-center before:w-full before:h-[560px] before:rounded-bl-[6rem] before:absolute before:top-0 before:left-0 before:bg-Light-red before:opacity-95 before:-z-10">
+    before:content-center before:w-full before:h-[560px] before:rounded-bl-[6rem] before:absolute before:top-0 before:left-0 before:bg-gradient-to-t from-Light-red to-Very-light-red before:opacity-95 before:-z-10">
         <nav class="h-[48px] flex items-center justify-between mb-32">
             <div class="scale-75 w-[7rem] h-20 bg-logo bg-center bg-no-repeat"></div>
             <div class="w-20 h-20 bg-icon-hamburger bg-center bg-no-repeat"></div>
@@ -21,16 +21,16 @@
         <h1 class="font-Overpass font-light text-center tracking-tighter text-White text-4xl mb-2 mx-6">A modern publishing platform</h1>
         <p class="mb-12 text-center text-base font-light font-Overpass text-White mx-6">Grow your audience and build your online branch</p>
         <div class="flex items-center justify-center">
-            <button class="font-Ubuntu font-bold text-sm text-Light-red w-32 h-12 rounded-3xl bg-White">Start For Free</button>
+            <button class="font-Ubuntu font-bold text-sm text-Light-red w-32 h-12 rounded-3xl bg-White mr-10">Start For Free</button>
             <button class="font-Ubuntu font-bold text-sm text-White w-32 h-12 rounded-3xl border-2 border-White">Learn More</button>
         </div>
     </header>
     
     <section class="mt-16">
         <h2 class="text-center font-Overpass text-Very-dark-blue font-semibold text-2xl">Designed for the future</h2>
-        <div class="w-[360px] h-[360px] bg-illustration-editor-mobile bg-center bg-no-repeat bg-auto my-4"></div>
+        <div class="w-[360px] h-[360px] bg-illustration-editor-mobile bg-center bg-no-repeat bg-auto my-4 mx-auto"></div>
         
-        <section>
+        <section class="mb-[14rem]">
             <h3 class="text-center font-Overpass text-Very-dark-blue font-semibold text-xl px-10 mb-4">Introducing an extensible editor</h3>
             <p class="text-center font-Overpass text-Very-dark-grayish-blue px-10 mb-8">
                 Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
@@ -46,36 +46,37 @@
         </section>
     </section>
 
-    <section>
-        <div class="w-20 h-20 bg-illustration-phones bg-center bg-no-repeat"></div>
-        <section>
-            <h3>State of the Art Infrastructure</h3>
-            <p>
+    <section class="relative h-[560px] rounded-bl-[6rem] rounded-tr-[6rem] bg-pattern-circles bg-no-repeat bg-cover section_telefono
+    before:content-center before:w-full before:h-[560px] before:rounded-bl-[6rem] before:rounded-tr-[6rem] before:absolute before:top-0 before:left-0 before:bg-gradient-to-t from-Very-dark-desaturated-blue to-Very-dark-gray-blue before:opacity-95 before:-z-10">
+        <div class="w-[360px] h-[360px] bg-illustration-phones bg-center bg-no-repeat bg-cover absolute top-[-180px] left-0 right-0 mx-auto"></div>
+        <section class="pt-[200px]">
+            <h3 class="text-center text-White font-Overpass text-4xl font-light mb-6">State of the Art Infrastructure</h3>
+            <p class="text-White font-Overpass text-center font-light px-10 text-base">
                 With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
             </p>
         </section>
     </section>
 
     <section>
-        <div class="w-20 h-20 bg-illustration-laptop-mobile bg-center bg-no-repeat"></div>
+        <div class="w-[360px] h-[360px] bg-auto my-4 bg-illustration-laptop-mobile bg-center bg-no-repeat mx-auto"></div>
         <section>
-            <h3>Free, open, simple</h3>
-            <p>
+            <h3 class="text-center font-Overpass text-Very-dark-blue font-semibold text-xl px-10 mb-4">Free, open, simple</h3>
+            <p class="text-center font-Overpass text-Very-dark-grayish-blue px-10 mb-8">
                 Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
             </p>
-            <h3>Powerful tooling</h3>
-            <p>
+            <h3 class="text-center font-Overpass text-Very-dark-blue font-semibold text-xl px-10 mb-4">Powerful tooling</h3>
+            <p class="text-center font-Overpass text-Very-dark-grayish-blue px-10 mb-[6rem]">
                 Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
             </p>
         </section>
     </section>
 
-    <footer>
-        <div class="w-20 h-20 bg-logo bg-center bg-no-repeat"></div>
-        <ul>
-            <li>
+    <footer class=" bg-Very-dark-black-blue rounded-tr-[6rem] pt-4">
+        <div  class="scale-75 w-[7rem] h-20 bg-logo bg-center bg-no-repeat mx-auto mb-12"></div>
+        <ul class="flex flex-col items-center text-center text-sm pb-12">
+            <li class="text-White font-Ubuntu font-medium">
                 Product
-                <ul>
+                <ul class="text-Grayish-blue font-normal text-sm mt-4">
                     <li>Overview</li>
                     <li>Pricing</li>
                     <li>Marketplace</li>
@@ -83,18 +84,18 @@
                     <li>Integrations</li>
                 </ul>
             </li>
-            <li>
+            <li class="text-White font-Ubuntu font-medium mt-4">
                 Company
-                <ul>
+                <ul class="text-Grayish-blue font-normal text-sm mt-4">
                     <li>About</li>
                     <li>Team</li>
                     <li>Blog</li>
                     <li>Carrers</li>
                 </ul>
             </li>
-            <li>
+            <li class="text-White font-Ubuntu font-medium mt-4">
                 Connect
-                <ul>
+                <ul class="text-Grayish-blue font-normal text-sm mt-4">
                     <li>Contact</li>
                     <li>Newsletter</li>
                     <li>Linkedin</li>

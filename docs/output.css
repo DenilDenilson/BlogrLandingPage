@@ -468,6 +468,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-\[-180px\] {
+  top: -180px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -476,6 +496,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-32 {
@@ -494,12 +519,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 4rem;
 }
 
+.mb-\[14rem\] {
+  margin-bottom: 14rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mb-\[6rem\] {
+  margin-bottom: 6rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.mr-14 {
+  margin-right: 3.5rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
 }
 
 .flex {
@@ -526,6 +583,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 360px;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
 .w-\[7rem\] {
   width: 7rem;
 }
@@ -548,6 +609,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
@@ -568,6 +633,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-left-radius: 6rem;
 }
 
+.rounded-tr-\[6rem\] {
+  border-top-right-radius: 6rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -580,6 +649,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-White {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
+.bg-Very-dark-black-blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 10% 16% / var(--tw-bg-opacity));
 }
 
 .bg-pattern-intro-mobile {
@@ -598,6 +672,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('../images/illustration-editor-mobile.svg');
 }
 
+.bg-pattern-circles {
+  background-image: url('../images/bg-pattern-circles.svg');
+}
+
 .bg-illustration-phones {
   background-image: url('../images/illustration-phones.svg');
 }
@@ -606,8 +684,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('../images/illustration-laptop-mobile.svg');
 }
 
+.from-Light-red {
+  --tw-gradient-from: hsl(353, 100%, 62%);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, hsl(353 100% 62% / 0));
+}
+
+.from-Very-dark-desaturated-blue {
+  --tw-gradient-from: hsl(237, 23%, 32%);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, hsl(237 23% 32% / 0));
+}
+
+.to-Very-light-red {
+  --tw-gradient-to: hsl(13, 100%, 72%);
+}
+
+.to-Very-dark-gray-blue {
+  --tw-gradient-to: hsl(237, 17%, 21%);
+}
+
 .bg-auto {
   background-size: auto;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-center {
@@ -621,6 +721,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.pt-\[200px\] {
+  padding-top: 200px;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -672,6 +792,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
 .tracking-tighter {
   letter-spacing: -0.05em;
 }
@@ -696,9 +824,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: hsl(207 13% 34% / var(--tw-text-opacity));
 }
 
+.text-Grayish-blue {
+  --tw-text-opacity: 1;
+  color: hsl(240 2% 79% / var(--tw-text-opacity));
+}
+
 header {
   background-position-x: -340px;
   background-position-y: -290px;
+}
+
+.section_telefono
+{
+  background-position-x: -40px;
+  background-position-y: -180px;
 }
 
 .before\:absolute::before {
@@ -726,6 +865,11 @@ header {
   height: 560px;
 }
 
+.before\:h-\[500px\]::before {
+  content: var(--tw-content);
+  height: 500px;
+}
+
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
@@ -741,10 +885,31 @@ header {
   border-bottom-left-radius: 6rem;
 }
 
+.before\:rounded-tr-\[6rem\]::before {
+  content: var(--tw-content);
+  border-top-right-radius: 6rem;
+}
+
 .before\:bg-Light-red::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: hsl(353 100% 62% / var(--tw-bg-opacity));
+}
+
+.before\:bg-Very-dark-desaturated-blue::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: hsl(237 23% 32% / var(--tw-bg-opacity));
+}
+
+.before\:bg-gradient-to-br::before {
+  content: var(--tw-content);
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.before\:bg-gradient-to-t::before {
+  content: var(--tw-content);
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
 .before\:opacity-95::before {
