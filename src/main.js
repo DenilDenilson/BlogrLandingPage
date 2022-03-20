@@ -50,3 +50,19 @@ listsDesplegable.forEach(listDesplegable => {
         
     });
 });
+
+// D E S K T O P
+
+const listsDesplegableDK = document.querySelectorAll('.list_desplegable-dk');
+
+listsDesplegableDK.forEach(listDesplegableDK => {
+    const titleDK = listDesplegableDK.previousElementSibling;
+    titleDK.addEventListener('click', () => {
+        console.log("Gaaaa")
+        let heightList = 0;
+        if (listDesplegableDK.clientHeight == "0") {
+            heightList = listDesplegableDK.scrollHeight;
+        }
+        listDesplegableDK.style.height = `${heightList}px`;
+    });
+}); 
